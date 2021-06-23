@@ -9,7 +9,7 @@ export default class HomeScreen extends Component{
                 <SafeAreaView style={styles.SafeAreaView}/>
                 <ImageBackground source={require('../../assets/bg_image.png')} style={styles.backgroundImage}>
                     <View style = {styles.titleBar}>
-                        <Text style={styles.titleText}>ISS Tracker App</Text>
+                        <Text style={styles.titleText}>ISS Location Tracker</Text>
                     </View> 
 
                     <TouchableOpacity style = {styles.routeCard} 
@@ -39,10 +39,7 @@ export default class HomeScreen extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex:1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor:"#99CCFF"
+        flex:1
     },
     droidSafeArea: {
         marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
@@ -71,7 +68,7 @@ const styles = StyleSheet.create({
         
     },
     titleText: {
-        fontSize: 40,
+        fontSize: 30,
         fontWeight: "bold",
         color: "white", 
     },
@@ -95,10 +92,10 @@ const styles = StyleSheet.create({
     },
     iconImage: {
         position: "absolute",
-        height: 160,
-        width: 160,
+        height: 120,
+        width: 120,
         resizeMode: "contain",
-        right: 20,
-        top: -80
+        right: 80,
+        top: -50
     }
 })

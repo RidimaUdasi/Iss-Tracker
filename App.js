@@ -42,3 +42,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+//<Stack.Screen name="IssLocation" component={IssLocationScreen}/>
